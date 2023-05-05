@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //Storing Password and API keys
 const dbPassword = process.env.password;
 const url = process.env.url;
+console.log(url);
 
 mongoose.connect(url);
 const itemSchema = { name: String };
