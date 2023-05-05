@@ -9,8 +9,6 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//Storing Password and API keys
-const dbPassword = process.env.password;
 const url = process.env.url;
 
 mongoose.connect(url);
